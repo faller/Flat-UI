@@ -4,9 +4,22 @@
 .radio .icons .second-icon {
   background-color: transparent !important;
 }
-.checkbox:hover,
-.radio:hover {
+.checkbox,
+.radio,
+.checkbox .first-icon,
+.radio .first-icon,
+.checkbox .second-icon,
+.radio .second-icon {
+  color: #444444 !important;
+}
+.checkbox.checked,
+.radio.checked,
+.checkbox.checked .second-icon,
+.radio.checked .second-icon {
   color: #ffffff !important;
+}
+.tooltip-inner {
+  color: #ffffff;
 }
 .input-icon {
   background-color: transparent !important;
@@ -14,21 +27,19 @@
 input,
 .tagsinput,
 .progress,
-.ui-slider,
 .prettyprint {
   background-color: #444444 !important;
   border: none !important;
-  color: #ffffff !important;
 }
-.tagsinput-add,
+.form-control,
+.prettyprint {
+  color: #ffffff;
+}
+.tagsinput-add {
+  background-color: #222222;
+}
 .demo-sidebar {
   background-color: #222222 !important;
-}
-.share {
-  background-color: #444444 !important;
-}
-.share:before {
-  border-color: transparent transparent #444444 transparent;
 }
 .inline-block {
   display: inline-block;

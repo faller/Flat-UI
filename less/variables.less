@@ -14,6 +14,11 @@
 @color-bright:   #444444;    // input-bg
 @color-font:     #fff;       // font, icon-bg
 
+//@color-dark:     #BD4932;    // panel-header, button
+//@color-basic:    #FFD34E;    // panel-content
+//@color-bright:   #FFFFD5;    // input-bg
+//@color-font:     #105B63;    // font, icon-bg
+
 @turquoise:     #1abc9c;
 @green-sea:     #16a085;
 
@@ -48,17 +53,17 @@
 // Main Colors
 // -------------------------
 
-@base:             @color-bright; // @wet-asphalt;
-@firm:             @color-dark; // @turquoise;
+@base:             @color-bright;   // @wet-asphalt;
+@firm:             @color-dark;     // @turquoise;
 
 @gray:             @concrete;
-@lightgray:        @color-dark; // @silver;
+@lightgray:        @silver;
 @inverse:          white;
 
-@success:          @color-dark; // @emerald;
-@danger:           @color-dark; // @alizarin;
-@warning:          @color-dark; // @sun-flower;
-@info:             @color-dark; // @peter-river;
+@success:         @emerald;
+@danger:          @alizarin;
+@warning:         @sun-flower;
+@info:            @peter-river;
 
 // Scaffolding
 // -------------------------
@@ -69,8 +74,8 @@
 // Links
 // -------------------------
 
-@link-color:       @color-font; // @green-sea;
-@link-hover-color: @color-font; // @turquoise;
+@link-color:       @color-font;                      // @green-sea;
+@link-hover-color:   mix(@link-color, white, 40%);  // @turquoise;
 
 // Typography
 // -------------------------
@@ -114,7 +119,7 @@
 // Pagination
 // -------------------------
 
-@pagination-color: @base;   // mix(@base, white, 20%);
+@pagination-color:  mix(@base, white, 20%);
 
 
 // Pager
@@ -181,28 +186,41 @@
       background-color: transparent !important;
     }
   }
-  &:hover {
-    color: @color-font !important;
+  & {
+    &, .first-icon, .second-icon {
+      color: @color-bright !important;
+    }
   }
+  &.checked {
+    &, .second-icon {
+      color: @color-font !important;
+    }
+  }
+}
+
+.tooltip-inner {
+  color: @color-font;
 }
 
 .input-icon {
   background-color: transparent !important;
 }
 
-input, .tagsinput, .progress, .ui-slider, .prettyprint {
+input, .tagsinput, .progress, .prettyprint {
   background-color: @color-bright !important;
   border: none !important;
-  color: @color-font !important;
 }
 
-.tagsinput-add, .demo-sidebar {
-  background-color: @color-dark !important;
+.form-control, .prettyprint {
+  color: @color-font;
 }
 
-.share {
-  background-color: @color-bright !important;
-  &:before {
-    border-color: transparent transparent @color-bright transparent;
-  }
+.tagsinput-add {
+  background-color: @firm;
 }
+
+.demo-sidebar {
+  background-color: @firm !important;
+}
+
+
