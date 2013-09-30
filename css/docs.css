@@ -13,6 +13,7 @@
 }
 input,
 .tagsinput,
+.progress,
 .ui-slider,
 .prettyprint {
   background-color: #444444 !important;
@@ -22,6 +23,12 @@ input,
 .tagsinput-add,
 .demo-sidebar {
   background-color: #222222 !important;
+}
+.share {
+  background-color: #444444 !important;
+}
+.share:before {
+  border-color: transparent transparent #444444 transparent;
 }
 .inline-block {
   display: inline-block;

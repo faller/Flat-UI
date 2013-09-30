@@ -207,6 +207,7 @@ you can use the generic selector below, but it's slower:
 }
 input,
 .tagsinput,
+.progress,
 .ui-slider,
 .prettyprint {
   background-color: #444444 !important;
@@ -216,6 +217,12 @@ input,
 .tagsinput-add,
 .demo-sidebar {
   background-color: #222222 !important;
+}
+.share {
+  background-color: #444444 !important;
+}
+.share:before {
+  border-color: transparent transparent #444444 transparent;
 }
 .inline-block {
   display: inline-block;
@@ -1765,6 +1772,9 @@ fieldset[disabled] .form-control + .input-icon,
   background-color: #222222;
 }
 .ui-slider {
+  background-color: #444444 !important;
+  border: none !important;
+  color: #ffffff !important;
   background: #ececec;
   border-radius: 32px;
   height: 12px;
@@ -1874,7 +1884,7 @@ fieldset[disabled] .form-control + .input-icon,
   position: relative;
 }
 .pagination ul {
-  background: #dadada;
+  background: #444444;
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -1903,7 +1913,7 @@ fieldset[disabled] .form-control + .input-icon,
 .pagination ul li.next > span {
   background: transparent;
   border: none;
-  border-right: 2px solid #e6e6e6;
+  border-right: 2px solid #848484;
   font-size: 16px;
   margin: 0 9px 0 0;
   padding: 12px 17px;
@@ -1921,7 +1931,7 @@ fieldset[disabled] .form-control + .input-icon,
 .pagination ul li.next > a:focus,
 .pagination ul li.previous > span:focus,
 .pagination ul li.next > span:focus {
-  border-color: #e6e6e6 !important;
+  border-color: #848484 !important;
 }
 @media (max-width: 480px) {
   .pagination ul li.previous > a,
@@ -1936,7 +1946,7 @@ fieldset[disabled] .form-control + .input-icon,
 }
 .pagination ul li.next > a,
 .pagination ul li.next > span {
-  border-left: 2px solid #e6e6e6;
+  border-left: 2px solid #848484;
   border-right: none;
   margin: 0;
   border-radius: 0 6px 6px 0;
@@ -1946,7 +1956,7 @@ fieldset[disabled] .form-control + .input-icon,
   background-color: #ffffff;
   border-color: #ffffff;
   border-width: 2px !important;
-  color: #dadada;
+  color: #444444;
   margin: 10px 5px 9px;
 }
 .pagination ul li.active > a:hover,
@@ -1955,11 +1965,11 @@ fieldset[disabled] .form-control + .input-icon,
 .pagination ul li.active > span:focus {
   background-color: #ffffff;
   border-color: #ffffff;
-  color: #dadada;
+  color: #444444;
 }
 .pagination ul li.active.previous,
 .pagination ul li.active.next {
-  border-color: #e6e6e6;
+  border-color: #848484;
 }
 .pagination ul li.active.previous {
   margin-right: 6px;
@@ -1968,7 +1978,7 @@ fieldset[disabled] .form-control + .input-icon,
 .pagination ul li > span {
   display: inline-block;
   background: #ffffff;
-  border: 5px solid #dadada;
+  border: 5px solid #444444;
   color: #ffffff;
   line-height: 16px;
   margin: 7px 2px 6px;

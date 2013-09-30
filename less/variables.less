@@ -114,7 +114,7 @@
 // Pagination
 // -------------------------
 
-@pagination-color: mix(@base, white, 20%);
+@pagination-color: @base;   // mix(@base, white, 20%);
 
 
 // Pager
@@ -190,7 +190,7 @@
   background-color: transparent !important;
 }
 
-input, .tagsinput, .ui-slider, .prettyprint {
+input, .tagsinput, .progress, .ui-slider, .prettyprint {
   background-color: @color-bright !important;
   border: none !important;
   color: @color-font !important;
@@ -198,4 +198,11 @@ input, .tagsinput, .ui-slider, .prettyprint {
 
 .tagsinput-add, .demo-sidebar {
   background-color: @color-dark !important;
+}
+
+.share {
+  background-color: @color-bright !important;
+  &:before {
+    border-color: transparent transparent @color-bright transparent;
+  }
 }
