@@ -1,3 +1,28 @@
+.checkbox .icons .first-icon,
+.radio .icons .first-icon,
+.checkbox .icons .second-icon,
+.radio .icons .second-icon {
+  background-color: transparent !important;
+}
+.checkbox:hover,
+.radio:hover {
+  color: #ffffff !important;
+}
+.input-icon {
+  background-color: transparent !important;
+}
+input,
+.tagsinput,
+.ui-slider,
+.prettyprint {
+  background-color: #444444 !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+.tagsinput-add,
+.demo-sidebar {
+  background-color: #222222 !important;
+}
 .inline-block {
   display: inline-block;
   zoom: 1;
@@ -18,12 +43,12 @@
   filter: unquote("progid:DXImageTransform.Microsoft.gradient(enabled = false)");
 }
 .dropdown-arrow-inverse {
-  border-bottom-color: #34495e !important;
-  border-top-color: #34495e !important;
+  border-bottom-color: #444444 !important;
+  border-top-color: #444444 !important;
 }
 .prettyprint {
   background-color: transparent;
-  border-color: #e7e9ec;
+  border-color: #e9e9e9;
   border-radius: 6px;
   border-width: 2px;
   overflow: auto;
@@ -37,7 +62,7 @@
   word-wrap: break-word;
 }
 .demo-headline {
-  color: #1abc9c;
+  color: #222222;
   font: 700 118px/1.1 "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   margin-bottom: 50px;
   padding: 40px 0;
@@ -67,7 +92,7 @@
   left: 0;
   font-size: 13px;
   line-height: 13px;
-  color: #c0c1c2;
+  color: #bfbfbf;
   font-weight: 400;
 }
 .demo-row .demo-text-note {
@@ -148,7 +173,7 @@
   font-size: 24.5px !important;
 }
 .demo-title small {
-  color: #c0c1c2;
+  color: #bfbfbf;
   font-size: 13px;
   font-weight: 400;
 }
@@ -208,7 +233,7 @@
 }
 .demo-icons-tooltip {
   bottom: 0;
-  color: #c2c8cf;
+  color: #c7c7c7;
   font-size: 12px;
   left: 100%;
   margin-left: 0 !important;
@@ -258,7 +283,7 @@
   width: 300px;
 }
 .static-modal-backdrop {
-  background-color: #243342;
+  background-color: #303030;
   padding: 62px 14px;
   margin-bottom: 50px;
   width: 100%;
@@ -305,7 +330,7 @@
   padding: 0;
   width: 150px;
   z-index: 10000;
-  background-color: #f3f4f5;
+  background-color: #f4f4f4;
   -webkit-backface-visibility: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
 }

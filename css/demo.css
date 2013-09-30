@@ -1,3 +1,28 @@
+.checkbox .icons .first-icon,
+.radio .icons .first-icon,
+.checkbox .icons .second-icon,
+.radio .icons .second-icon {
+  background-color: transparent !important;
+}
+.checkbox:hover,
+.radio:hover {
+  color: #ffffff !important;
+}
+.input-icon {
+  background-color: transparent !important;
+}
+input,
+.tagsinput,
+.ui-slider,
+.prettyprint {
+  background-color: #444444 !important;
+  border: none !important;
+  color: #ffffff !important;
+}
+.tagsinput-add,
+.demo-sidebar {
+  background-color: #222222 !important;
+}
 .inline-block {
   display: inline-block;
   zoom: 1;
@@ -18,8 +43,8 @@
   filter: unquote("progid:DXImageTransform.Microsoft.gradient(enabled = false)");
 }
 .dropdown-arrow-inverse {
-  border-bottom-color: #34495e !important;
-  border-top-color: #34495e !important;
+  border-bottom-color: #444444 !important;
+  border-top-color: #444444 !important;
 }
 .container {
   max-width: 970px !important;
@@ -43,7 +68,7 @@
   width: 236px;
 }
 .demo-logo small {
-  color: rgba(52, 73, 94, 0.30000000000000004);
+  color: rgba(68, 68, 68, 0.30000000000000004);
   display: block;
   font-size: 22px;
   font-weight: 700;
@@ -62,7 +87,7 @@
   left: 0;
   font-size: 13px;
   line-height: 13px;
-  color: #c0c1c2;
+  color: #bfbfbf;
   font-weight: 400;
 }
 .demo-row .demo-text-note {
@@ -89,7 +114,7 @@
   font: bold 23px/40px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .demo-panel-title small {
-  color: #798795;
+  color: #848484;
   font-size: inherit;
   font-weight: 400;
 }
@@ -130,7 +155,7 @@
 }
 .demo-icons-tooltip {
   bottom: 0;
-  color: #c2c8cf;
+  color: #c7c7c7;
   font-size: 12px;
   left: 100%;
   margin-left: 0 !important;
@@ -181,7 +206,7 @@
   margin: 3px 0 -3px;
 }
 .demo-download {
-  background-color: #ebedef;
+  background-color: #ececec;
   height: 190px;
   margin: 0 auto 32px;
   padding: 40px 28px 30px 32px;
@@ -199,10 +224,10 @@
   text-align: center;
 }
 .demo-text-box a:hover {
-  color: #1abc9c;
+  color: #222222;
 }
 .demo-browser {
-  background: #2c3e50 url(../images/demo/browser.png) 0 0 no-repeat;
+  background: #3a3a3a url(../images/demo/browser.png) 0 0 no-repeat;
   background-size: 659px 42px;
   color: #ffffff;
   margin: 0 41px 140px 0;
@@ -256,7 +281,7 @@
   -webkit-font-smoothing: antialiased;
 }
 .demo-browser-content {
-  background-color: #34495e;
+  background-color: #444444;
   overflow: hidden;
   padding: 21px 0 0 20px;
   border-radius: 0 0 6px;

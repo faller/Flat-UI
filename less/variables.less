@@ -9,6 +9,11 @@
 // Color Swatches
 // --------------------------------------------------
 
+@color-dark:     #222222;    // panel-header, button
+@color-basic:    #333333;    // panel-content
+@color-bright:   #444444;    // input-bg
+@color-font:     #fff;       // font, icon-bg
+
 @turquoise:     #1abc9c;
 @green-sea:     #16a085;
 
@@ -43,29 +48,29 @@
 // Main Colors
 // -------------------------
 
-@base:             @wet-asphalt;
-@firm:             @turquoise;
+@base:             @color-bright; // @wet-asphalt;
+@firm:             @color-dark; // @turquoise;
 
 @gray:             @concrete;
-@lightgray:        @silver;
+@lightgray:        @color-dark; // @silver;
 @inverse:          white;
 
-@success:          @emerald;
-@danger:           @alizarin;
-@warning:          @sun-flower;
-@info:             @peter-river;
+@success:          @color-dark; // @emerald;
+@danger:           @color-dark; // @alizarin;
+@warning:          @color-dark; // @sun-flower;
+@info:             @color-dark; // @peter-river;
 
 // Scaffolding
 // -------------------------
 
-@body-bg:               #fff;
-@text-color:            @base;
+@body-bg:               @color-basic; // #fff;
+@text-color:            @color-font;  // @base;
 
 // Links
 // -------------------------
 
-@link-color:       @green-sea;
-@link-hover-color: @turquoise;
+@link-color:       @color-font; // @green-sea;
+@link-hover-color: @color-font; // @turquoise;
 
 // Typography
 // -------------------------
@@ -165,3 +170,32 @@
 @pre-border-radius: @border-radius-large;
 @pre-background:    transparent;
 @pre-border-color:  mix(@base, @inverse, 12%);
+
+//
+// Other Hacks
+// --------------------------------------------------
+
+.checkbox, .radio {
+  .icons {
+    .first-icon, .second-icon {
+      background-color: transparent !important;
+    }
+  }
+  &:hover {
+    color: @color-font !important;
+  }
+}
+
+.input-icon {
+  background-color: transparent !important;
+}
+
+input, .tagsinput, .ui-slider, .prettyprint {
+  background-color: @color-bright !important;
+  border: none !important;
+  color: @color-font !important;
+}
+
+.tagsinput-add, .demo-sidebar {
+  background-color: @color-dark !important;
+}
